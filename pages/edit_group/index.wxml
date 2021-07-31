@@ -1,0 +1,19 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="pagetitle">
+    <view>找不到你的企业/单位</view>
+    <view>可选择一下类型全新创建</view>
+  </view>
+  <view class="grouplist">
+    <view class="grouplist-li" wx:for="{{grouplist}}" wx:key="index">
+      <view class="grouplist-li-pic">
+          <image src="{{item.pic}}"></image>
+      </view>
+      <view class="grouplist-li-title">
+        <view class="grouplist-li-company">{{item.company}}</view>
+        <view class="grouplist-li-title">{{item.title}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="create" bindtap="onCreate">个人创建企业</view>
+</view>

@@ -1,0 +1,26 @@
+/* pages/personnel_details/index.wxss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+} 
+.table{
+  font-size: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  border:1rpx solid #e0e0e0;
+}
+.td{
+  width: 70%;
+  box-sizing:border-box;
+  padding: 16rpx;
+  border-bottom:1rpx solid #e0e0e0;
+}
+.td:nth-last-child(2n+0){
+  width: 30%;
+  border-right:1rpx solid #e0e0e0;
+}
+.td:last-of-type,.td:nth-last-child(2){
+  border-bottom:none;
+}

@@ -1,0 +1,34 @@
+<!--pages/personnel_details/index.wxml-->
+<view class="container">
+  <view class="table">
+    <view class="td">员工编号</view>
+    <view class="td">{{ coding }}</view>
+
+    <view class="td">姓名</view>
+    <view class="td">{{ name }}</view>
+
+    <view class="td">性别</view>
+    <view class="td">{{ sex }}</view>
+
+    <view class="td">部门名称</view>
+    <view class="td">{{ department }}</view>
+
+    <view class="td">在职状态</view>
+    <view class="td">{{ workingStatus }}</view>
+
+    <view class="td">聘用日期</view>
+    <view class="td">{{ time }}</view>
+
+    <view class="td">身份证号</view>
+    <view class="td">{{ identityNumber }}</view>
+
+    <view class="td">学历</view>
+    <view class="td">{{ education }}</view>
+
+    <view class="td">专业</view>
+    <view class="td">{{ specialty }}</view>
+
+    <view class="td">电话</view>
+    <view class="td">{{ phone }}</view>
+  </view>
+</view>

@@ -1,0 +1,45 @@
+<!--pages/customer/index.wxml-->
+<view class="container">
+  <view class="swiper-tab">
+    <view class="tab-item {{currentTab==0 ? 'click' : ''}}" data-current="0" bindtap="swichNav">未绑定客户</view>
+    <view class="tab-item {{currentTab==1 ? 'click' : ''}}" data-current="1" bindtap="swichNav">已绑定客户</view>
+  </view>
+  <swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+    <swiper-item>
+      <view class="table" hidden="{{hiddenDatalist}}">
+        <view class="tr">
+          <view class="td td-1 t1">序号</view>
+          <view class="td td-2 t1">客户编号</view>
+          <view class="td td-3 t1 t2">客户全称</view>
+          <view class="td td-4 t1">经营方式</view>
+        </view>
+        <block wx:for="{{tableData}}" wx:key="index">
+          <view class="tr">
+            <view class="td td-1">{{index+1}}</view>
+            <view class="td td-2">{{item.coding}}</view>
+            <view class="td td-3">{{item.full}}</view>
+            <view class="td td-4">{{item.way}}</view>
+          </view>
+        </block>
+      </view>
+    </swiper-item> 
+    <swiper-item>
+      <view class="table" hidden="{{hiddenDatalist}}">
+        <view class="tr">
+          <view class="td td-1 t1">序号</view>
+          <view class="td td-2 t1">客户编号</view>
+          <view class="td td-3 t1 t2">客户全称</view>
+          <view class="td td-4 t1">经营方式</view>
+        </view>
+        <block wx:for="{{tableData}}" wx:key="index">
+          <view class="tr">
+            <view class="td td-1">{{index+1}}</view>
+            <view class="td td-2">{{item.coding}}</view>
+            <view class="td td-3">{{item.full}}</view>
+            <view class="td td-4">{{item.way}}</view>
+          </view>
+        </block>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>

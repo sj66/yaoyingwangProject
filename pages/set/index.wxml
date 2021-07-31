@@ -1,0 +1,8 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="setpassword" bindtap="onmodify">
+    <text>修改密码</text>
+    <image src="../news/img/right_arrow.png"></image>
+  </view>
+  <button style="margin:30rpx;color:#ffffff;background-color:#09bb07" bindtap="quit">退出</button> 
+</view>

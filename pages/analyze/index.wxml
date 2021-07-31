@@ -1,0 +1,47 @@
+<!--pages/analyze/index.wxml-->
+<view class="container">
+  <view class="weui-title">销量分析</view>
+  <view class="weui-grids">
+    <view class="weui-grid" wx:for="{{typeList}}" wx:key="index">
+      <navigator url="{{item.link}}" hover-class="none">
+        <view class="weui-grid-icon">
+          <image src="{{item.icon}}" mode="scaleToFill"></image>
+        </view>
+        <text class="weui-grid-label">{{item.title}}</text>
+      </navigator>
+    </view>
+  </view>
+  <view class="weui-title">客户分析</view>
+  <view class="weui-grids">
+    <view class="weui-grid" wx:for="{{internalList}}" wx:key="index">
+      <navigator url="{{item.link}}" hover-class="none">
+        <view class="weui-grid-icon">
+          <image src="{{item.icon}}" mode="scaleToFill"></image>
+        </view>
+        <text class="weui-grid-label">{{item.title}}</text>
+      </navigator>
+    </view>
+  </view>
+  <view class="weui-title">产品分析</view>
+  <view class="weui-grids">
+    <view class="weui-grid" wx:for="{{marketList}}" wx:key="index">
+      <navigator url="{{item.link}}" hover-class="none">
+        <view class="weui-grid-icon">
+          <image src="{{item.icon}}" mode="scaleToFill"></image>
+        </view>
+        <text class="weui-grid-label">{{item.title}}</text>
+      </navigator>
+    </view>
+  </view>
+  <view class="weui-title">销售人员</view>
+  <view class="weui-grids">
+    <view class="weui-grid" wx:for="{{naviList}}" wx:key="index">
+      <navigator url="{{item.link}}" hover-class="none">
+        <view class="weui-grid-icon">
+          <image src="{{item.icon}}" mode="scaleToFill"></image>
+        </view>
+        <text class="weui-grid-label">{{item.title}}</text>
+      </navigator>
+    </view>
+  </view>
+</view>

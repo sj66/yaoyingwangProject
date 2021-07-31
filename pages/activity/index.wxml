@@ -1,0 +1,15 @@
+<!--pages/activity/index.wxml-->
+<view class="container">
+  <view class="activity-name">
+    <view class="title">活动报名接龙</view>
+    <view class="content">张三 创建 ▪ 元宵节公司操场集体烧烤，2月23号截止报名</view>
+  </view>
+  <view class="activity-list">
+    <view class="example"><text style="margin-right:20rpx;font-size:32rpx;color:#999999">例</text> 张三 销售部</view>
+    <view class="activity-list-li" wx:for="{{activityList}}" wx:key="index">
+      <text style="margin-right:30rpx;font-size:32rpx;color:#999999">{{index+1}}</text> {{item.name}}
+    </view>
+    <view class="continue"><view class="continue-box"><van-icon name="add-o" style="margin-right:20rpx;font-size:36rpx"/>接龙</view></view>
+  </view>
+  <view class="submit-btn">提交</view>
+</view>

@@ -1,0 +1,85 @@
+/* pages/login/login.wxss */
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  box-sizing: border-box;
+  /* background-color: #f2f2f2;     */
+} 
+ 
+/*登录图片*/
+.login-icon{
+  flex: none;
+}
+.login-img{
+  width: 750rpx;
+}
+ 
+/*表单内容*/
+.login-from {
+  margin-top: 40rpx;
+  flex: auto;
+  width: 100%;
+  height:100%;
+}
+.inputView{
+  margin: 0 auto;
+  width: 90%;
+  height: 88rpx;
+  line-height: 88rpx;
+  background-color: #ffffff;
+  border: 2rpx solid #cccccc;
+  border-radius: 12rpx;
+  margin-bottom: 30rpx;
+ }
+/* 输入框 */
+.nameImage,
+.keyImage{
+  margin-left: 44rpx;
+  width: 28rpx;
+  height: 28rpx;
+}
+.loginLab{
+  margin: 30rpx 30rpx 30rpx 20rpx;
+  color: #545454;
+  font-size: 28rpx;
+}
+.inputText{
+  flex: block;
+  float: right;
+  width: 490rpx;
+  margin-top: 22rpx;
+  color: #333333;
+  font-size: 28rpx;
+}
+/* 忘记密码 */
+.forgetPassword{
+  float: right;
+  font-size: 24rpx;
+  color: #3896fa;
+  margin-right: 40rpx;
+}
+.forgetPassword:active{
+  color: #2177c7;
+}
+/*按钮*/
+.loginBtnView {
+  width: 100%;
+  height: auto;
+}
+ 
+.loginBtn{
+  width: 80%;
+  margin-top: 120rpx;
+}
+/* 注册 */
+.register{
+  font-size: 28rpx;
+  color: #3896fa;
+  text-align: center;
+  margin-top: 30rpx;
+}
+.register:active{
+  color: #2177c7;
+}

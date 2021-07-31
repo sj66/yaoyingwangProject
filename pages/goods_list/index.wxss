@@ -1,0 +1,145 @@
+/**index.wxss**/
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/*搜索样式  */
+.search{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100rpx;
+  background-color: #ffffff;
+  border-bottom: 2rpx solid #eeeeee;
+  z-index: 99;
+}
+.search-header{
+  width: 95%;
+  height: 70rpx;
+  background-color: #eeeeee;
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  border-radius: 10rpx;
+  margin: 0 auto;
+  margin-top: 15rpx;
+}
+.search-header image{
+  width: 50rpx;
+  height: 50rpx;
+  padding: 0 20rpx;
+}
+.search-input{
+  width: 80%;
+  height: 70rpx;
+  font-size: 24rpx;
+}
+/* 商品列表 */
+.goodslist{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background-color: #fff;
+  margin-top: 100rpx;
+}
+.goodslist-li{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20rpx 0;
+  padding-left: 20rpx;
+  border-bottom: 2rpx solid #eeeeee;
+}
+.goodslist-li-img{
+  width: 260rpx;
+  height: 260rpx;
+}
+.goodslist-li-img image{
+  width: 100%;
+  height: 100%;
+}
+.goodslist-li-content{
+  margin-left:20rpx;
+  font-size: 26rpx;
+  line-height: 40rpx;
+}
+.goodslist-li-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.goodslist-li-package,
+.goodslist-li-startTime,
+.goodslist-li-endTime{
+  font-size: 24rpx;
+  color: #999999;
+}
+.goodslist-li-btn {
+  /* margin-left: 60rpx; */
+  width: 120rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #ffffff;
+  background-color: #ff0000;
+  border-radius: 6rpx;
+  margin-top: 15rpx;
+}
+button{
+  width: 100% !important;
+}
+.van-calendar__header-subtitle, .van-calendar__header-title {
+  opacity: 0;
+}
+/* 弹窗 */
+.click-btn{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-top: 100rpx;
+  padding-bottom: 20rpx;
+}
+.select{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 28rpx;
+  margin-left: 6rpx;
+}
+.number-list{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  box-sizing: border-box;
+}
+.number-li{
+  width: 14.28%;
+  height: 120rpx;
+  line-height: 120rpx;
+  text-align: center;
+  border-radius: 6rpx;
+}
+.red{
+  color: #ffffff;
+  background-color: #ff0000;
+}
+.true-btn{
+  width: 80%;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 32rpx;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 35rpx;
+  background-color: #ff0000;
+  margin: 30rpx auto;
+}

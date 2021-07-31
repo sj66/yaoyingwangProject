@@ -1,0 +1,59 @@
+/**index.wxss**/
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ededed;
+} 
+.userinfo{
+  margin: 30rpx 20rpx;
+  padding: 30rpx;
+  width: 85%;
+  height: 300rpx;
+  border-radius: 10rpx;
+  background-color: #fff;
+}
+.userinfo,
+.companyinfo,
+.usermotto {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+.userposition{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 40rpx;
+}
+.companyname,
+.username{
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.companyposition{
+  margin-top: 20rpx;
+  font-size: 24rpx;
+}
+.userinfo-avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 10rpx;
+}
+.usernumber{
+  width: 100%;
+  margin-top: 20rpx;
+  display: flex;
+  justify-content: space-between;
+  font-size: 24rpx;
+}
+.usernumber-youjiantou{
+  width: 16rpx;
+  height: 22rpx;
+}
+.van-cell{
+  color:#3896fa !important;
+}

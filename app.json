@@ -1,0 +1,80 @@
+{
+  "pages":[
+    "pages/news/index",
+    "pages/login/index",
+    "pages/gallery/index",
+    "pages/member/index",
+    "pages/sales/index",
+    "pages/analyze/index",
+    "pages/contract/index",
+    "pages/datas/index",
+    "pages/forget/index",
+    "pages/password/index",
+    "pages/price_upload/index",
+    "pages/purchase/index",
+    "pages/register/index",
+    "pages/report/index",
+    "pages/set/index",
+    "pages/store/index",
+    "pages/store_details/index",
+    "pages/work/index",
+    "pages/goods/index",
+    "pages/personnel/index",
+    "pages/personnel_details/index",
+    "pages/schedule/index",
+    "pages/promote/index",
+    "pages/customer/index",
+    "pages/sign/index",
+    "pages/retail/index",
+    "pages/finance/index",
+    "pages/meal/index",
+    "pages/pact/index",
+    "pages/sell/index",
+    "pages/banned_list/index",
+    "pages/goods_list/index",
+    "pages/goods_detail/index",
+    "pages/switch_identity/index",
+    "pages/edit_group/index",
+    "pages/create_group/index",
+    "pages/create_team/index",
+    "pages/register_identity/index",
+    "pages/administrative/index",
+    "pages/activity/index",
+    "pages/chart/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#3896fa",
+    "navigationBarTitleText": "药营网",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "selectedColor": "#5b8cbc",
+    "list": [{
+      "pagePath": "pages/news/index",
+      "text": "消息",
+      "iconPath": "pages/news/img/news.png",
+      "selectedIconPath": "pages/news/img/news_active.png"
+    },
+    {
+      "pagePath": "pages/gallery/index",
+      "text": "图库",
+      "iconPath": "pages/news/img/gallery.png",
+      "selectedIconPath": "pages/news/img/gallery_active.png"
+    },
+    {
+      "pagePath": "pages/work/index",
+      "text": "工作台",
+      "iconPath": "pages/news/img/work.png",
+      "selectedIconPath": "pages/news/img/work_active.png"
+    },
+    {
+      "pagePath": "pages/member/index",
+      "text": "我的",
+      "iconPath": "pages/news/img/member.png",
+      "selectedIconPath": "pages/news/img/member_active.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

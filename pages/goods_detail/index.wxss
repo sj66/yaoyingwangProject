@@ -1,0 +1,274 @@
+/* pages/goods_detail/index.wxss */
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.goodsPic {
+  width: 100%;
+  height: 520rpx;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+
+.goodsPic image {
+  width: 100%;
+  height: 100%;
+}
+
+.goods_content {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.goodsInfo {
+  width: 630rpx;
+  display: flex;
+  flex-direction: column;
+  font-size: 26rpx;
+  line-height: 40rpx;
+  margin-left: 30rpx;
+}
+
+.goodsName {
+  font-size: 32rpx;
+}
+
+.goodsFormat,
+.goodsFactory {
+  font-size: 26rpx;
+}
+
+/* 分享按钮 */
+.page_share {
+  width: 60rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.share-image {
+  width: 60rpx;
+  height: 60rpx;
+}
+
+.share-image image {
+  width: 100%;
+  height: 100%;
+}
+
+.share_text {
+  font-size: 28rpx;
+  font-weight: bold;
+  color: #999999;
+}
+
+/* 导航栏切换 */
+.swiper-tab {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  line-height: 80rpx;
+  border-bottom: 2rpx solid #eeeeee;
+  border-top: 2rpx solid #eeeeee;
+  background-color: #fff;
+  z-index: 99;
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+}
+
+.tab-item {
+  font-size: 30rpx;
+  color: #777;
+}
+
+.swiper {
+  width: 95%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-top: 2rpx solid #e6e6ee;
+}
+
+.click {
+  font-weight: bold;
+  color: #09bb07;
+  border-bottom: 6rpx solid#09bb07;
+}
+
+/* 表格 */
+.table {
+  width: 100%;
+}
+
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 90rpx;
+  line-height: 90rpx;
+  align-items: center;
+  border-bottom: 2rpx solid #ddd;
+}
+
+.td {
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  border-right: 2rpx solid #ddd;
+  height: 100%;
+}
+
+.td-1 {
+  width: 29%;
+  justify-content: center;
+  display: flex;
+  text-align: center;
+  border-right: 2rpx solid #ddd;
+  border-left: 2rpx solid #ddd;
+  height: 100%;
+}
+
+.td-2 {
+  width: 70%;
+  justify-content: center;
+  border-right: 2rpx solid #ddd;
+  text-align: left;
+  height: 100%;
+  max-width: 100%;
+}
+
+.bg-w {
+  background: #afb4db;
+
+}
+
+.th-text {
+  width: 100%;
+  justify-content: center;
+  color: #000;
+  display: block;
+  height: 90rpx;
+  align-items: center;
+  text-indent: 30rpx;
+}
+
+/* 分享弹窗 */
+.popup-box {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #eeeeee;
+  z-index: 100;
+}
+
+.wechat,
+.poster,
+.terminal {
+  width: 33.33%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 35rpx 0;
+}
+
+.wechat button {
+  width: 128px !important;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #eeeeee;
+}
+
+.wechat-image,
+.poster-image,
+.terminal-image {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.wechat-image image,
+.poster-image image,
+.terminal-image image {
+  width: 100%;
+  height: 100%;
+}
+
+.wechat-text,
+.poster-text,
+.terminal-text {
+  font-size: 26rpx;
+  margin-top: 20rpx;
+}
+
+.poster-text,
+.terminal-text {
+  font-weight: bold;
+  color: #000000;
+}
+
+.close-btn {
+  width: 100%;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+}
+
+/* 海报分享 */
+.tankuang {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 999999;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.tankuang .container {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 1200rpx;
+  border-radius: 20rpx 20rpx 0px 0px;
+  background-color: #ffffff;
+}
+
+.popupClose {
+  width: 100%;
+  font-size: 26rpx;
+  text-align: right;
+  margin: 20rpx 0;
+  padding-right: 20rpx;
+}
+
+.canvasImg {
+  width: 550rpx;
+  height: 930rpx;
+  background-color: #ffffff;
+  box-shadow: 2px 2px 5px #cccccc;
+  margin: 0 auto;
+}
+
+.popupTip {
+  font-size: 26rpx;
+  text-align: center;
+  margin: 25rpx 0;
+}
+
+.saveBtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}

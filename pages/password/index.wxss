@@ -1,0 +1,57 @@
+/**index.wxss**/
+.container {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+} 
+.list{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 26rpx;
+  padding-left: 40rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 2rpx solid #eeeeee;
+}
+
+.input-text {
+  display: inline-block;
+  width: 58%;
+}
+
+.yanzen {
+  display: inline-block;
+  font-size: 26rpx;
+  vertical-align: top;
+}
+
+.yanzen-row {
+  display: inline-block;
+  font-size: 26rpx;
+  vertical-align: top;
+}
+
+.time {
+  font-size: 26rpx;
+  color: #3DA15B;
+  display: inline-block;
+  
+}
+
+.smiao{
+  display: inline-block;
+  
+}
+/* 返回 */
+.toreturn{
+  font-size: 28rpx;
+  color: #3896fa;
+  text-align: center;
+  margin-top: 30rpx;
+}
+.toreturn:active{
+  color: #2177c7;
+}
+

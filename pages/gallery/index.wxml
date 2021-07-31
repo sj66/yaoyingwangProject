@@ -1,0 +1,32 @@
+<!--pages/gallery/index.wxml-->
+<view class="container">
+  <view class="search">
+    <van-search value="{{ value }}" placeholder="请输入搜索关键词" />
+  </view>
+  <view class="page-section">
+    <swiper class="page-swiper" indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}"
+      duration="{{duration}}">
+      <block wx:for="{{background}}" wx:key="index">
+        <swiper-item>
+          <image class="page-banner" src="{{item.icon}}"></image>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+  <view class="typelist">
+    <van-grid square>
+      <van-grid-item use-slot wx:for="{{typeList}}" wx:key="index">
+        <image style="width: 40rpx;height: 40rpx;" src="{{item.icon}}"></image>
+        <text style="font-size: 24rpx;margin-top:20rpx">{{item.title}}</text>
+      </van-grid-item>
+    </van-grid>
+  </view>
+  <view class="container-service">
+      <van-grid column-num="3">
+        <van-grid-item use-slot wx:for="{{serviceList}}" wx:key="index">
+          <image style="width: 60rpx;height: 60rpx;" src="{{item.icon}}"></image>
+          <text style="font-size: 24rpx;margin-top:20rpx">{{item.title}}</text>
+          </van-grid-item>
+      </van-grid>
+  </view>
+</view>

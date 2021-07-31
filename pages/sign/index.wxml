@@ -1,0 +1,81 @@
+<!--pages/sign/index.wxml-->
+<view class="container">
+  <view class="swiper-tab">
+    <view class="tab-item {{currentTab==0 ? 'click' : ''}}" data-current="0" bindtap="swichNav">快递签收</view>
+    <view class="tab-item {{currentTab==1 ? 'click' : ''}}" data-current="1" bindtap="swichNav">文件签收</view>
+  </view>
+  <swiper class="swiper" current="{{currentTab}}" duration="200" bindchange="swiperChange">
+    <swiper-item>
+      <view class="header-box">
+        <view class="search">
+          <input class="search-input" bindinput='query' placeholder="请输入快递公司" />
+        </view>
+        <view class="addData" bindtap="onAddData">新增</view>
+      </view>
+      <view class="table" hidden="{{hiddenDatalist}}">
+        <view class="tr">
+          <view class="td td-1 t1">序号</view>
+          <view class="td td-2 t1">快递公司</view>
+          <view class="td td-3 t1">快递单号</view>
+          <view class="td td-4 t1">收件人</view>
+          <view class="td td-5 t1">签收人</view>
+          <view class="td td-6 t1">制单日期</view>
+          <view class="td td-7 t1">制单人</view>
+        </view>
+        <block wx:for="{{listData}}" wx:key="index">
+          <view class="tr">
+            <view class="td td-1">{{index+1}}</view>
+            <view class="td td-2">{{item.courierCompany}}</view>
+            <view class="td td-3">{{item.number}}</view>
+            <view class="td td-4">{{item.recipient}}</view>
+            <view class="td td-5">{{item.signer}}</view>
+            <view class="td td-6">{{item.date}}</view>
+            <view class="td td-7">{{item.dealer}}</view>
+          </view>
+        </block>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class="header-box">
+        <view class="search">
+          <input class="search-input" bindinput='query1' placeholder="请输入单号" />
+        </view>
+        <view class="addData" bindtap="onAddData">新增</view>
+      </view>
+      <view class="table" hidden="{{hiddenDatalist}}">
+        <view class="tr">
+          <view class="td td-1 t1">序号</view>
+          <view class="td td-2 t1">快递公司</view>
+          <view class="td td-3 t1">快递单号</view>
+          <view class="td td-4 t1">收件人</view>
+          <view class="td td-5 t1">签收人</view>
+          <view class="td td-6 t1">制单日期</view>
+          <view class="td td-7 t1">制单人</view>
+        </view>
+        <block wx:for="{{listData}}" wx:key="index">
+          <view class="tr">
+            <view class="td td-1">{{index+1}}</view>
+            <view class="td td-2">{{item.courierCompany}}</view>
+            <view class="td td-3">{{item.number}}</view>
+            <view class="td td-4">{{item.recipient}}</view>
+            <view class="td td-5">{{item.signer}}</view>
+            <view class="td td-6">{{item.date}}</view>
+            <view class="td td-7">{{item.dealer}}</view>
+          </view>
+        </block>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+<van-popup show="{{ show }}" position="bottom" bind:close="closePopup" closeable round>
+  <view class="popup-box">
+    <view class="popup-li">快递公司：<input class="weui-input" model:value="{{courierCompany}}" /></view>
+    <view class="popup-li">快递单号：<input class="weui-input" model:value="{{number}}" /></view>
+    <view class="popup-li">收<text decode="{{true}}">&nbsp;&nbsp;</text>件<text decode="{{true}}">&nbsp;</text>人：<input
+        class="weui-input" model:value="{{recipient}}" /></view>
+    <view class="popup-li">制单日期：<input class="weui-input" model:value="{{date}}" /></view>
+    <view class="popup-li">制<text decode="{{true}}">&nbsp;&nbsp;</text>单<text decode="{{true}}">&nbsp;</text>人：<input
+        class="weui-input" model:value="{{dealer}}" /></view>
+    <view class="popup-btn" bindtap="onAddInfo"><button type="primary">确定</button></view>
+  </view>
+</van-popup>

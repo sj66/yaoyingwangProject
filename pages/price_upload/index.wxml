@@ -1,0 +1,28 @@
+<!--pages/price_upload/index.wxml-->
+<view class="container">
+  <view class="file-header">
+    <view class="file-header-number">共1个文件</view>
+    <view class="file-header-search">
+      <view class="search-file">
+        <image src="../news/img/search.png"></image>
+        <input class="search-input" placeholder="请输入您要查找的文件名"/>
+      </view>
+    </view>
+    <view class="file-header-upload"><text class="upload-icon">+</text>上传</view>
+  </view>
+  <view class="table">
+    <view class="tr bg-w">
+      <view class="th th-1">文件</view>
+      <view class="th th-2">上传时间</view>
+      <view class="th th-3">上传者</view>
+    </view>
+    <block wx:for="{{listData}}" wx:key="index">
+      <view class="tr bg-g">
+        <view class="td td-1">{{item.file}}</view>
+        <view class="td td-2">{{item.time}}</view>
+        <view class="td td-3">{{item.name}}</view>
+      </view>
+    </block>
+  </view>
+</view>
+

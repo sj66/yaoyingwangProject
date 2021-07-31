@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="title">注册信息</view>
+  <view class="tip">
+    <view>请输入手机号和工作邮箱</view>
+    <view>如无工作邮箱，请输入用于工作的个人邮箱</view>
+  </view>
+  <view class="list">
+    <input placeholder="手机号"/>
+  </view>
+  <view class="list">
+    <input placeholder="工作邮箱（选填）"/>
+  </view>
+  <button style="width:100%;margin-top:200rpx;color:#ffffff;background-color:#3896fa" bindtap="onComplete">下一步</button> 
+</view>

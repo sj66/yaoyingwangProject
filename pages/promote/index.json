@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-popup": "@vant/weapp/popup/index",
+    "Select": "../../components/select/select"
+  },
+  "navigationBarTitleText": "今日推广"
+}

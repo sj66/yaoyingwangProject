@@ -1,0 +1,37 @@
+<!--pages/personnel/index.wxml-->
+<view class="container">
+  <view class="header">
+    <view class="search-header">
+      <image src="../news/img/search.png"></image>
+      <input class="search-input" bindinput='query' placeholder="搜索" />
+    </view>
+    <view class="addBtn" bindtap="onAddData">新增</view>
+  </view>
+  <view class="weui-grids">
+    <view class="weui-grid" wx:for="{{typeList}}" wx:key="index">
+      <view bindtap="onPersonnelDetail" data-coding="{{item.coding}}" data-name="{{item.name}}" data-sex="{{item.sex}}"
+        data-department="{{item.department}}" data-workingStatus="{{item.workingStatus}}" data-time="{{item.time}}" data-identityNumber="{{item.identityNumber}}"
+        data-education="{{item.education}}" data-specialty="{{item.specialty}}" data-phone="{{item.phone}}">
+        <view class="weui-grid-icon">
+          <image src="../news/img/personal_sales.png"></image>
+        </view>
+        <text class="weui-grid-label">{{item.name}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<van-popup show="{{ show }}" position="bottom" bind:close="closePopup" closeable round>
+  <view class="popup-box">
+    <view class="popup-li">员工编号：<input class="weui-input" model:value="{{coding}}"/></view>
+    <view class="popup-li">姓<text decode = "{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>名：<input class="weui-input" model:value="{{name}}"/></view>
+    <view class="popup-li">性<text decode = "{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>别：<input class="weui-input" model:value="{{sex}}"/></view>
+    <view class="popup-li">部门名称：<input class="weui-input" model:value="{{department}}"/></view>
+    <view class="popup-li">在职状态：<input class="weui-input" model:value="{{workingStatus}}"/></view>
+    <view class="popup-li">聘用日期：<input class="weui-input" model:value="{{time}}"/></view>
+    <view class="popup-li">身份证号：<input class="weui-input" model:value="{{identityNumber}}"/></view>
+    <view class="popup-li">学<text decode = "{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>历：<input class="weui-input" model:value="{{education}}"/></view>
+    <view class="popup-li">专<text decode = "{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>业：<input class="weui-input" model:value="{{specialty}}"/></view>
+    <view class="popup-li">电<text decode = "{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</text>话：<input class="weui-input" model:value="{{phone}}"/></view>
+    <view class="popup-btn" bindtap="onAddInfo"><button type="primary">确定</button></view>
+  </view>
+</van-popup>

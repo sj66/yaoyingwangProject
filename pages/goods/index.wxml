@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="search">
+    <view class="search-header">
+      <image src="../news/img/search.png"></image>
+      <input class="search-input" bindinput='query' placeholder="搜索" />
+    </view>
+  </view>
+  <scroll-view enable-flex="true" scroll-y="true" class="goodslist">
+    <van-swipe-cell right-width="{{ 65 }}" wx:for="{{list}}" wx:key="index" class="goodslist-li" async-close
+      bind:close="swipe_close" data-x="{{index}}">
+      <view class="goods_box" bindtap="onGoodsDetail" data-img="{{item.img}}" data-gid="{{item.goods_id}}"
+        data-price="{{item.price}}" data-retail="{{item.retail_price}}" data-name="{{item.name}}"
+        data-specs="{{item.specs}}" data-company="{{item.company}}" data-unit="{{item.unit}}"
+        data-mid="{{item.mid_pack_num}}" data-big="{{item.big_pack_num}}" data-start="{{item.prod_date}}"
+        data-end="{{item.valid_date}}" data-batch="{{item.batch_number}}">
+        <view class="goodslist-li-content">
+          <view class="goodslist-li-goods_id">商品编号：{{item.goods_id}}</view>
+          <view class="goodslist-li-name">商品名称：{{item.name}}</view>
+          <view class="goodslist-li-specs">包装规格：{{item.specs}}</view>
+          <view class="goodslist-li-company">生产企业：{{item.company}}</view>
+          <view class="goodslist-li-package">中包装数：{{item.mid_pack_num}}<text
+              decode="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;</text>大包装数：{{item.big_pack_num}}</view>
+          <view class="goodslist-li-startTime">生产日期：{{item.prod_date}}</view>
+          <view class="goodslist-li-endTime">有效日期：{{item.valid_date}}</view>
+        </view>
+      </view>
+      <view slot="right" class="del_btn"><text>删除</text></view>
+    </van-swipe-cell>
+  </scroll-view>
+</view>

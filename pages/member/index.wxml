@@ -1,0 +1,21 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <view class="userposition">
+      <view class="companyinfo">
+        <view class="companyname">广东家之和药业有限公司</view>
+        <view class="companyposition">总经理</view>
+      </view>
+      <image class="userinfo-avatar" src="../news/img/bg.png" mode="cover"></image>
+    </view>
+    <view class="usermotto">
+      <view class="username">{{userName}}</view>
+      <view class="usernumber">
+        <text>账号：{{account}}</text>
+        <image class="usernumber-youjiantou" src="../news/img/right_arrow.png"></image>
+      </view>
+    </view>
+  </view>
+  <van-cell is-link title="切换身份" icon="setting-o" link-type="navigateTo" url="/pages/switch_identity/index" style="width:100%"/>
+  <van-cell is-link title="设置" icon="exchange" link-type="navigateTo" url="/pages/set/index" style="width:100%"/>
+</view>

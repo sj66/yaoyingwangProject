@@ -1,0 +1,26 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="list">
+    <view class="phone">手机号码：</view>
+    <input type="number" placeholder="请输入手机号码" bindinput="phoneInput"/>
+  </view>
+  <view class="list">
+    <view class="verify">验证码：</view>
+    <input class="input-text" placeholder="请输入验证码" bindinput="phoneNumber"/>
+    <block wx:if='{{yanStatus == false}}'>
+      <view class='yanzen' bindtap='onNumber'>获取短信验证码</view>
+    </block>
+    <block wx:else>
+      <view class='yanzen-row'>
+        <view class='time'>{{minute}}</view>
+        <view class="smiao">s后重新获取</view>
+      </view>
+    </block>
+  </view>
+  <view class="list">
+    <view class="password">密码：</view>
+    <input type="password" placeholder="请输入密码" bindinput="phonePassword"/>
+  </view>
+  <button style="margin-top:200rpx;color:#ffffff;background-color:#09bb07" bindtap="onSubmit">提交</button> 
+  <view class="toreturn" bindtap="onReturn">返回登录</view>
+</view>

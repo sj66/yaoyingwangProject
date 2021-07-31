@@ -1,0 +1,153 @@
+/* pages/sign/index.wxss */
+.container {
+  margin-left: 10rpx;
+  margin-right: 10rpx;
+}
+
+/* 导航栏 */
+.swiper-tab {
+  position: fixed;
+  left: 10rpx;
+  top: 0;
+  width: 97%;
+  display: flex;
+  flex-direction: row;
+  line-height: 80rpx;
+  border-left: 2rpx solid #dfdfdf;
+  background-color: #fff;
+  z-index: 99;
+}
+
+.tab-item {
+  width: 50%;
+  text-align: center;
+  font-size: 30rpx;
+  color: #777;
+  border-top: 2rpx solid #dfdfdf;
+  border-right: 2rpx solid #dfdfdf;
+  border-bottom: 2rpx solid #dfdfdf;
+}
+
+.swiper {
+  position: absolute;
+  top: 100rpx;
+  left: 10rpx;
+  width: 97%;
+  height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.click {
+  font-weight: bold;
+  background-color: #dfdfdf;
+}
+.header-box{
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+/* 搜索 */
+.search {
+  width: 97%;
+  height: 70rpx;
+}
+
+.search-input {
+  width: 95%;
+  height: 70rpx;
+  font-size: 30rpx;
+  padding-left: 30rpx;
+  border-radius: 10rpx;
+  border: 2rpx solid #dfdfdf;
+  margin: 0 auto;
+}
+/* 新增 */
+.addData {
+  width: 200rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 30rpx;
+  text-align: center;
+  color: #777;
+  border: 2rpx solid #dfdfdf;
+  border-radius: 10rpx;
+  margin-left: 30rpx;
+}
+
+/* 表格 */
+.table {
+  width: 100%;
+  font-size: 24rpx;
+  border-left: 2rpx solid #999999;
+  border-top: 2rpx solid #999999;
+  box-sizing: border-box;
+}
+
+.tr {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.td {
+  display: flex;
+  height: 70rpx;
+  justify-content: center;
+  align-items: center;
+  border-right: 2rpx solid #999999;
+  border-bottom: 2rpx solid #999999;
+}
+
+.t1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.td-1,
+.td-2,
+.td-4,
+.td-5,
+.td-7 {
+  width: 10%;
+}
+
+.td-3 {
+  width: 30%;
+}
+
+.td-6 {
+  width: 20%;
+}
+
+/* 新增弹窗 */
+.popup-box {
+  width: 100%;
+  height: 600rpx;
+  margin-top: 100rpx;
+}
+.popup-li{
+  display: flex;
+  justify-self: start;
+  align-items: center;
+  margin-bottom: 20rpx;
+  margin-left: 60rpx;
+}
+input{
+  width: 60%;
+  height: 60rpx;
+  padding-left: 20rpx;
+  border: 2rpx solid #dfdfdf;
+}
+.popup-btn{
+  width: 100%;
+  margin: 40rpx auto;
+}
+.popup-btn button{
+  width: 80% !important;
+}
